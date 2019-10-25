@@ -1,17 +1,17 @@
 ﻿/*Color Scheme*/
 :root {
     --c-background: #0E0B16;
-    --c-fuscia: #A239CA;
-    --c-jewel: #4717F6;
-    --c-stark: #E7DFDD;
+    --c-primaryAccent: #A239CA;
+    --c-secondaryAccent: #4717F6;
+    --c-tertiaryAccent: #E7DFDD;
 }
 
 html {
     font-family: 'Roboto', sans-serif;
 }
 
-header {
-    background-color: var(--c-fuscia);
+header { 
+    background-color: var(--c-primaryAccent);
     text-align: center;
     padding: 0.1em;
     font-size: 4.5em;
@@ -41,7 +41,7 @@ h2 {
 }
 
 .flex-container>div {
-    background-color: var(--c-jewel);
+    background-color: var(--c-secondaryAccent);
     width: 20em;
     margin: 0.5%;
     text-align: center;
@@ -50,5 +50,5 @@ h2 {
 }
 
 .flex-container>div:hover {
-    background-color: var(--c-stark)
+    background-color: var(--c-tertiaryAccent)
 }
