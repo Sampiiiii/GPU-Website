@@ -1,6 +1,6 @@
 ﻿/*Color Scheme*/
 :root {
-    --c-void: #0E0B16;
+    --c-background: #0E0B16;
     --c-fuscia: #A239CA;
     --c-jewel: #4717F6;
     --c-stark: #E7DFDD;
@@ -20,7 +20,7 @@ header {
 }
 
 body {
-    background-color: var(--c-void);
+    background-color: var(--c-background);
     font-size: 100%;
 }
 
