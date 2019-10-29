@@ -21,19 +21,20 @@
             <h2>GPU</h2>
         </div>
     </div>
-    <script src="three.r92.min.js"></script>
-    <script src="vanta.dots.min.js"></script>
+    <script src="node_modules\vanta\vendor\three.r92.min.js"></script>
+    <script src="node_modules\vanta\src\vanta.fog.js"></script>
+    <script>
+        VANTA.FOG({
+            el: "#test",
+            highlightColor: 0xf0ff,
+            midtoneColor: 0x3cff,
+            lowlightColor: 0x5236d9,
+            baseColor: 0xc34545,
+            blurFactor: 0.29,
+            speed: 0.40,
+            zoom: 0.80
+        })
+    </script>
 </body>
 
 </html>
-
-<script>
-    VANTA.DOTS({
-        el: "#test",
-        backgroundColor: 0xc720ff,
-        color: 0x2f5abd,
-        color2: 0xc720ff,
-        size: 6.90,
-        spacing: 22.00
-    })
-</script>
