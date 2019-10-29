@@ -5,10 +5,10 @@
     <title>CPU vs GPU</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="\CSS\main.css" />
     <link rel="stylesheet" type="text/css" href="\CSS\fab.css" />
-    <link rel="stylesheet" type="text/css" href="\CSS\fullpage.css" />
-    <script type="text/javascript" src="\Javascript\fullpage.js"></script>
+    <link rel="stylesheet" type="text/css" href="\CSS\main.css" />
+    <link rel="stylesheet" type="text/css" href="\node_modules\fullpage.js\dist\fullpage.css" />
+    <script type="text/javascript" src="\node_modules\fullpage.js\dist\fullpage.js"></script>
     <script src="https://kit.fontawesome.com/1ffeb89ed1.js" crossorigin="anonymous"></script>
 </head>
 
@@ -45,22 +45,23 @@
             </li>
         </ul>
     </div>
+
     <div id="fullpage">
-        <div class="section">Some section</div>
-        <div class="section">Some section</div>
-        <div class="section">Some section</div>
-        <div class="section">Some section</div>
+        <div class="section">One</div>
+        <div class="section">
+            <div class="slide" data-anchor="slide1">Two 1</div>
+            <div class="slide" data-anchor="slide2">Two 2</div>
+        </div>
+        <div class="section">Three</div>
+        <div class="section">Four</div>
     </div>
+
     <script>
         new fullpage('#fullpage', {
-            //options here
-            autoScrolling: true,
-            scrollHorizontally: true
+            sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
         });
-
-        //methods
-        fullpage_api.setAllowScrolling(false);
     </script>
+
 </body>
 
 </html>
