@@ -1,54 +1,30 @@
-﻿/*Color Scheme*/
-:root {
-    --c-background: #0E0B16;
-    --c-primaryAccent: #A239CA;
-    --c-secondaryAccent: #4717F6;
-    --c-tertiaryAccent: #E7DFDD;
-}
-
-html {
-    font-family: 'Roboto', sans-serif;
-}
-
-header { 
-    background-color: var(--c-primaryAccent);
-    text-align: center;
-    padding: 0.1em;
-    font-size: 4.5em;
-    font-weight: lighter;
-    margin-bottom: 0.5%;
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 
 body {
-    background-color: var(--c-background);
-    font-size: 100%;
+    overflow: hidden;
+    background: #f4f4f9;
 }
 
 h1 {
-    font-size: 1.4em;
-    text-align: center;
-}
-
-h2 {
-    font-size: 1.1em;
-}
-
-.flex-container {
-    flex-wrap: wrap;
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: center;
+
+    font-size: 3em;
+    color: #444444;
 }
 
-.flex-container>div {
-    background-color: var(--c-secondaryAccent);
-    width: 20em;
-    margin: 0.5%;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
+section {
+    min-height: 100vh;
+    background-color: white;
 }
 
-.flex-container>div:hover {
-    background-color: var(--c-tertiaryAccent)
-}
