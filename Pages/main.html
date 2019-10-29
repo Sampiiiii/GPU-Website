@@ -3,12 +3,15 @@
 <head>
     <meta charset="utf-8">
     <title>CPU vs GPU</title>
-    <meta name="description" content="">
+    <meta name="description" content="A website about the differences between CPU's And GPU's">
+    <meta name="author" content="Sam Piper">
+    <meta name="keywords" content="ComputerScience, GPU, CPU, Information">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="\CSS\fab.css" />
     <link rel="stylesheet" type="text/css" href="\CSS\main.css" />
     <link rel="stylesheet" type="text/css" href="\node_modules\fullpage.js\dist\fullpage.css" />
     <script type="text/javascript" src="\node_modules\fullpage.js\dist\fullpage.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1ffeb89ed1.js" crossorigin="anonymous"></script>
 </head>
 
@@ -18,47 +21,69 @@
         <div class="fab fab-icon-holder">
             <i class="fas fa-bars fa-lg"></i>
         </div>
-        <ul class="fab-options">
-            <li>
+        <ul id='myMenu' class="fab-options">
+            <li data-menuanchor="firstPage" class="active">
+
                 <span class="fab-label">GPU</span>
-                <div class="fab-icon-holder">
-                    <i class="fas fa-question"></i>
-                </div>
+                <a href='#firstPage'>
+                    <div class="fab-icon-holder">
+
+                        <i class="fas fa-question"></i>
+                    </div>
+                </a>
             </li>
-            <li>
-                <span class="fab-label">CPU</span>
+            <li data-menuanchor="secondPage">
+                <span class="fab-label">How GPU's Work</span>
+                <a href='#secondPage'>
                 <div class="fab-icon-holder">
                     <i class="fas fa-microchip fa-lg"></i>
                 </div>
+                </a>
             </li>
-            <li>
+            <li data-menuanchor="thirdPage">
+                <span class="fab-label">CPU's</span>
+                <a href='#thirdPage'>
+                <div class="fab-icon-holder">
+                    <i class="fas fa-question"></i>
+                </div>
+                </a>
+            </li>
+            <li data-menuanchor="fourthPage">
                 <span class="fab-label">Parallel Processing</span>
+                <a href='#fourthPage'>
                 <div class="fab-icon-holder">
                     <i class="fas fa-question"></i>
                 </div>
+                </a>
             </li>
-            <li>
-                <span class="fab-label">Pipelining</span>
+            <li data-menuanchor="fifthPage">
+                <span class="fab-label">Multicore Systems</span>
+                <a href='#fifthPage'>
                 <div class="fab-icon-holder">
                     <i class="fas fa-question"></i>
                 </div>
+                </a>
             </li>
         </ul>
     </div>
 
     <div id="fullpage">
-        <div class="section">One</div>
+        <div class="section">GPU</div>
         <div class="section">
-            <div class="slide" data-anchor="slide1">Two 1</div>
-            <div class="slide" data-anchor="slide2">Two 2</div>
+            <div class="slide" data-anchor="slide1">How GPUS work</div>
+            <div class="slide" data-anchor="slide2">Parallel Systems</div>
         </div>
-        <div class="section">Three</div>
-        <div class="section">Four</div>
+        <div class="section">CPUS</div>
+        <div class="section">Parallel Processing</div>
+        <div class="section">Multicore Systems</div>
     </div>
 
     <script>
         new fullpage('#fullpage', {
-            sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
+            licenseKey: '20AAB3CD-8DB547D7-BD677F05-3012A0AD',
+            anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'lastPage'],
+            sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6', 'red'],
+            menu: '#myMenu'
         });
     </script>
 
