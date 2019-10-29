@@ -5,15 +5,18 @@
     <title>CPU vs GPU</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="\CSS\main.css" />
-    <link rel="stylesheet" href="\CSS\fab.css" />
+    <link rel="stylesheet" type="text/css" href="\CSS\main.css" />
+    <link rel="stylesheet" type="text/css" href="\CSS\fab.css" />
+    <link rel="stylesheet" type="text/css" href="\CSS\fullpage.css" />
+    <script type="text/javascript" src="\Javascript\fullpage.js"></script>
+    <script src="https://kit.fontawesome.com/1ffeb89ed1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- Making the Navigation Button-->
     <div class="fab-container">
         <div class="fab fab-icon-holder">
-            <i class="fas fa-question"></i>
+            <i class="fas fa-bars fa-lg"></i>
         </div>
         <ul class="fab-options">
             <li>
@@ -25,7 +28,7 @@
             <li>
                 <span class="fab-label">CPU</span>
                 <div class="fab-icon-holder">
-                    <i class="fas fa-question"></i>
+                    <i class="fas fa-microchip fa-lg"></i>
                 </div>
             </li>
             <li>
@@ -42,29 +45,22 @@
             </li>
         </ul>
     </div>
-    <section>
-        <h1>
-            The GPU
-        </h1>
-        <p>
-            Aute elit velit Lorem eu aliqua duis adipisicing aliquip excepteur culpa esse sunt. Qui in consectetur sunt
-            aliquip nisi ex reprehenderit eu ea eu. Est cillum culpa sint aute nostrud qui amet labore occaecat anim
-            eiusmod. Consequat est nulla eiusmod dolore adipisicing nostrud. Ipsum ut enim elit velit ea consequat culpa
-            ea.
-        </p>
-    </section>
-    <section>
-        <h1>
-            The CPU
-        </h1>
-        <p>
-            Ut culpa ea consequat proident mollit. Pariatur ex consequat voluptate consectetur in laboris fugiat aliquip
-            dolor velit. Laborum laboris quis aute est nulla occaecat. Dolor adipisicing sit aliquip cillum in. Ad ex
-            duis adipisicing cillum ex est cupidatat tempor in exercitation adipisicing reprehenderit ipsum
-            reprehenderit. Minim quis proident ad officia.
-        </p>
-    </section>
-    <script src="\Javascript\scrolling.js"></script>
+    <div id="fullpage">
+        <div class="section">Some section</div>
+        <div class="section">Some section</div>
+        <div class="section">Some section</div>
+        <div class="section">Some section</div>
+    </div>
+    <script>
+        new fullpage('#fullpage', {
+            //options here
+            autoScrolling: true,
+            scrollHorizontally: true
+        });
+
+        //methods
+        fullpage_api.setAllowScrolling(false);
+    </script>
 </body>
 
 </html>
