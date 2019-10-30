@@ -23,61 +23,76 @@
         </div>
         <ul id='myMenu' class="fab-options">
             <li data-menuanchor="firstPage" class="active">
-
                 <span class="fab-label">GPU</span>
                 <a href='#firstPage'>
                     <div class="fab-icon-holder">
-
-                        <i class="fas fa-question"></i>
+                        <i class="fas fa-pager fa-lg"></i>
                     </div>
                 </a>
             </li>
             <li data-menuanchor="secondPage">
-                <span class="fab-label">How GPU's Work</span>
+                <span class="fab-label">How GPU's Work & Parallel Processing</span>
                 <a href='#secondPage'>
-                <div class="fab-icon-holder">
-                    <i class="fas fa-microchip fa-lg"></i>
-                </div>
+                    <div class="fab-icon-holder">
+                        <i class="fas fa-memory fa-lg"></i>
+                    </div>
                 </a>
             </li>
             <li data-menuanchor="thirdPage">
                 <span class="fab-label">CPU's</span>
                 <a href='#thirdPage'>
-                <div class="fab-icon-holder">
-                    <i class="fas fa-question"></i>
-                </div>
+                    <div class="fab-icon-holder">
+                        <i class="fas fa-microchip fa-lg"></i>
+                    </div>
                 </a>
             </li>
             <li data-menuanchor="fourthPage">
                 <span class="fab-label">Parallel Processing</span>
                 <a href='#fourthPage'>
-                <div class="fab-icon-holder">
-                    <i class="fas fa-question"></i>
-                </div>
+                    <div class="fab-icon-holder">
+                        <i class="fas fa-grip-lines fa-lg"></i>
+                    </div>
                 </a>
             </li>
             <li data-menuanchor="fifthPage">
                 <span class="fab-label">Multicore Systems</span>
                 <a href='#fifthPage'>
-                <div class="fab-icon-holder">
-                    <i class="fas fa-question"></i>
-                </div>
+                    <div class="fab-icon-holder">
+                       <i class="fas fa-fire fa-lg"></i>
+                    </div>
                 </a>
             </li>
         </ul>
     </div>
 
     <div id="fullpage">
-        <div class="section">GPU</div>
-        <div class="section">
-            <div class="slide" data-anchor="slide1">How GPUS work</div>
-            <div class="slide" data-anchor="slide2">Parallel Systems</div>
+        <div class="section" id="pageNumero1">
+            <div class="slide" id="pageNumero1" data-anchor="slide1">
+            <h1 class="pageOne">GPU's</h1>
+            
+            
+            </div>
+            <div class="slide" id="pageNumero1" data-anchor="slide2">How They Work</div>
         </div>
-        <div class="section">CPUS</div>
-        <div class="section">Parallel Processing</div>
-        <div class="section">Multicore Systems</div>
+
+        <div class="section" id="pageNumero2">
+            <h1>Paralllel Systems</h1>
+        
+        
+        
+        
+        
+        </div>
+
+
+        <div class="section" id="pageNumero3">CPUS</div>
+
+        <div class="section" id="pageNumero4">Parallel Processing</div>
+
+        <div class="section" id="pageNumero5">Multicore Systems</div>
     </div>
 
+    <!-- Initializing the Fullpage Module-->
     <script>
         new fullpage('#fullpage', {
             licenseKey: '20AAB3CD-8DB547D7-BD677F05-3012A0AD',

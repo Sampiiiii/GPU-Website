@@ -1,3 +1,11 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "CPU vs GPU"
+    "liveServer.settings.multiRootWorkspaceName": "CPU vs GPU",
+    "liveServer.settings.host": "localhost",
+    "spotify.lyricsButtonPriority": -1,
+    "spotify.showLyricsButton": false,
+    "spotify.showSignInButton": false,
+    "spotify.showSignOutButton": false,
+    "spotify.showToggleShufflingButton": true,
+    "spotify.showVolumeDownButton": true,
+    "spotify.showVolumeUpButton": true
 }

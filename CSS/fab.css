@@ -63,6 +63,7 @@
 
 .fab-label {
     padding: 2px 5px;
+    font-weight: 100;
     align-self: center;
     user-select: none;
     white-space: nowrap;

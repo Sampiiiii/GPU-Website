@@ -6,7 +6,6 @@
     outline: 0;
     font-size: 100%;
     vertical-align: baseline;
-    background: transparent;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -15,13 +14,27 @@ body {
     background: #f4f4f9;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
 h1 {
     display: flex;
+    vertical-align: top;
     align-items: center;
     justify-content: center;
+    font-size: 1.5em;
+    text-rendering: auto;
+}
 
-    font-size: 3em;
-    color: #444444;
+h1.pageOne {
+    color: pink;
 }
 
 .section {
@@ -29,3 +42,18 @@ h1 {
     font-size: 5em;
 }
 
+#pageNumero1 {
+    background: url() no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#pageNumero2 {
+    background: url('../Images/BackgroundImages/test.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
