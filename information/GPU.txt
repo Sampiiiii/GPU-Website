@@ -1,0 +1,10 @@
+Explain the purpose of GPU's And what applications are used for.
+
+Gpus and similiar to CPus in the sense that they are both silicon based microprocessors mounted on a pcb with somefrom of cooling attatched
+But their microarcitecture is fundamentally different, A CPU is designed to minimise memory access latency
+which is the dealy from computing a read address and getitng the results back
+wheras a GPU is designed to tolerate latency and maximize the amount of data that can be accessed a sceond.
+Also, CPU's work better on data-dependant operatoions whearas GPUs are designed to work faster
+when mostly the intstructions exectued are independent of the data values.
+
+The difference in specialisation is clear, for example a CPU can have multiple cores (up to 12 in most use cases) compared to a GPU which has thousands of cores that 
