@@ -22,43 +22,19 @@
             <i class="fas fa-bars fa-lg"></i>
         </div>
         <ul id='myMenu' class="fab-options">
-            <li data-menuanchor="firstPage" class="active">
-                <span class="fab-label">Introduction</span>
-                <a href='#firstPage'>
-                    <div class="fab-icon-holder">
-                        <i class="fas fa-code fa-lg"></i>
-                    </div>
-                </a>
-            </li>
             <li data-menuanchor="secondPage" class="active">
                 <span class="fab-label">GPU's & How GPU's Work</span>
                 <a href='#secondPage'>
-                    <div class="fab-icon-holder">
-                        <i class="fas fa-pager fa-lg"></i>
-                    </div>
-                </a>
-            </li>
-            <li data-menuanchor="thirdPage">
-                <span class="fab-label">Parallel Systems</span>
-                <a href='#thirdPage'>
-                    <div class="fab-icon-holder">
-                        <i class="fas fa-memory fa-lg"></i>
-                    </div>
-                </a>
-            </li>
-            <li data-menuanchor="fourthPage">
-                <span class="fab-label">CPU's</span>
-                <a href='#fourthPage'>
                     <div class="fab-icon-holder">
                         <i class="fas fa-microchip fa-lg"></i>
                     </div>
                 </a>
             </li>
-            <li data-menuanchor="fifthPage">
-                <span class="fab-label">Parallel Processing</span>
-                <a href='#fifthPage'>
+            <li data-menuanchor="thirdPage">
+                <span class="fab-label">Parallel Systems & Parallel Processing</span>
+                <a href='#thirdPage'>
                     <div class="fab-icon-holder">
-                        <i class="fas fa-grip-lines fa-lg"></i>
+                        <i class="fas fa-memory fa-lg"></i>
                     </div>
                 </a>
             </li>
@@ -74,39 +50,6 @@
     </div>
 
     <div id="fullpage">
-        <div class="section">
-            <h1 class="shadow">Introduction</h1>
-            <div class="textBox">
-                GPUs are similiar to CPUs in the sense that they are both silicon based microprocessors mounted on a pcb
-                with somefrom of cooling attatched
-                But their microarcitecture is fundamentally different, 
-                <br></br>
-                A CPU is designed to minimise memory access
-                latency
-                which is ideal for computing a read address and getitng the results back
-                wheras a GPU is designed to tolerate latency and maximize the amount of data that can be accessed a
-                sceond.
-                <br></br>
-                Thus CPU's are optimised to finish a task as quick as possible with the smallest latency, while still
-                being able to quickly switch between operations.
-                A CPU's nature is all about processing tasks in a serialized way.
-                <br></br>
-                This contrasts with a GPU which is optimised to get the maximum throughput, allowing it to push as many
-                tasks as posbile throught its internals at once. It does this through task parallisation (more on that
-                later)
-            </div>
-            <div class="Sources pullUp">
-                <h3>Sources</h3>
-                    <ul>
-                        Sources:
-                        <li><a href='https://blogs.nvidia.com/blog/2009/12/16/whats-the-difference-between-a-cpu-and-a-gpu/'>Click</a></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-            </div>
-        </div>
         <div class="section" id="pageNumero1">
             <div class="slide" id="pageNumero1" data-anchor="slide1">
                 <h1 class="shadow">GPU's</h1>
@@ -171,48 +114,6 @@
             </div>
         </div>
 
-
-        <div class="section" id="pageNumero3">
-            <h1 class="shadow">CPU's</h1>
-            <div class="textBox">
-                Ipsum reprehenderit minim reprehenderit ex ea labore aute. Irure minim elit ipsum non fugiat laboris
-                aliqua occaecat. Laborum ad tempor qui est laboris. Enim proident ex voluptate ullamco duis sint
-                proident eiusmod veniam aliqua reprehenderit proident fugiat ullamco.
-
-                Nulla amet consectetur velit laborum cupidatat cupidatat et laboris aliqua duis velit officia
-                reprehenderit cupidatat. Minim anim nulla cupidatat pariatur velit cillum incididunt velit aliqua.
-                Commodo mollit nostrud fugiat elit fugiat fugiat.
-
-                Culpa dolore magna voluptate dolor non exercitation in proident consectetur aliqua laboris ut. Id
-                aliquip in aliquip ipsum velit id id amet in non ullamco quis aliquip deserunt. Exercitation esse magna
-                proident commodo pariatur consequat incididunt laboris dolor.
-
-            </div>
-
-
-
-        </div>
-
-        <div class="section" id="pageNumero4">
-            <h1 class="shadow">Parallel Processing</h1>
-            <div class="textBox">
-                Ipsum reprehenderit minim reprehenderit ex ea labore aute. Irure minim elit ipsum non fugiat laboris
-                aliqua occaecat. Laborum ad tempor qui est laboris. Enim proident ex voluptate ullamco duis sint
-                proident eiusmod veniam aliqua reprehenderit proident fugiat ullamco.
-
-                Nulla amet consectetur velit laborum cupidatat cupidatat et laboris aliqua duis velit officia
-                reprehenderit cupidatat. Minim anim nulla cupidatat pariatur velit cillum incididunt velit aliqua.
-                Commodo mollit nostrud fugiat elit fugiat fugiat.
-
-                Culpa dolore magna voluptate dolor non exercitation in proident consectetur aliqua laboris ut. Id
-                aliquip in aliquip ipsum velit id id amet in non ullamco quis aliquip deserunt. Exercitation esse magna
-                proident commodo pariatur consequat incididunt laboris dolor.
-
-            </div>
-
-
-        </div>
-
         <div class="section" id="pageNumero5">
             <h1 class="shadow">Multi-core Systems</h1>
             <div class="textBox">
@@ -239,7 +140,7 @@
         new fullpage('#fullpage', {
             licenseKey: '20AAB3CD-8DB547D7-BD677F05-3012A0AD',
             anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'lastPage'],
-            sectionsColor: ['#CCE1F2', '#C6F8E5', '#FBF7D5', '#F9DED7', '#F5CDDE', '#E2BEF1'],
+            sectionsColor: ['#F6FFF8', '#EAF4F4', '#CCE3DE', '#A4C3B2', '#GB9080', '#E2BEF1'],
             menu: '#myMenu',
             verticalCentered: false
         });

@@ -1,42 +1,71 @@
 Explain the purpose of GPU's And what applications are used for.
 
-A Graphics Processing Unit (GPU) is a computer component that is capable of performing myriads of mathematical calucaltions simulataenously thanks to its parallel
-design. Due to its parrallel structure, a GPU is extremely efficient at manipulating computer garphics and image processing as these tasks require large blocks of data to be processed at once
-which is what a GPU is made for.
+A Graphics Processing Unit (GPU) is a computer component that is capable of performing myriads of mathematical calculations simultaneously thanks to its parallel
+design. Due to its parallel structure, a GPU is extremely efficient at manipulating computer graphics and image processing as these tasks require large blocks of data to be processed at once which is what a GPU is made for.
 
 The Computational Functions of a GPU:
 
 The majority of the computational functions are related to 3D computer graphics. But modern GPUs may also include basic 2d acceleration and framebuffer capabilities. Including, but not limited to, 
-texture mapping, polygon rendering and the rotation and translations of vertices into different coordinate systems.And as all of these functions involve vector and matrix operations, they can be used for other
-non-graphical calucaltions. Such as the so-called "embarassingly parallel problems", these problems all much suited to being computed parallely and so a GPU is perfect for these.
-
-What are GPUs used for?
-
-
-
-
+texture mapping, polygon rendering and the rotation and translations of vertices into different coordinate systems. And as all of these functions involve vector and matrix operations, they can be used for other non-graphical calculations. Such as the so-called "embarrassingly parallel problems", these problems are all much suited to being computed with parallel processing and so a GPU is perfect for these.
 
 So why are GPUs so good for gaming and other tasks?
 
 There are two major components of a GPU, texture mapping units and render outputs.
-The maximum number of TMU's that a GPU has dictates the maximum texel output
+The maximum number of TMU's that a GPU has dictates the maximum texel output, where a texel is the fundamental unit of a texture map, and how quickly a GPU can address and map textures onto objects. Render outputs (a.k.a raster operations pipelines) are where the output of a GPU is compiled into an image for display onto a monitor.
+The number of render outputs multiplied by the clock speed of a GPU gives you the pixel fill rate. So having a high number of render outputs results in more pixels being outputted simultaneously. High numbers of render outputs can handle higher levels of antialiasing, which is a technique for smoothing the jagged edges of where one 3D objects ends and another begins.
 
+All of these features make a GPU perfect for gaming, as every 3D game utilises textures heavily, so having a device that can process massive amounts of textures simultaneously will result in a fast gaming experience. Which a modern CPU just cannot provide thanks to its serial nature.
+
+As mentioned earlier. Since GPUs are great at bulk processing of matrix and vector calculations, so any sort of use-case that relies on massive amounts of calculations to be done are perfect for GPU's.
+
+Some examples include:
+    Video Decoding
+    Cryptomining
+    Machine Learning
+    Computer-Aided Design & Rendering
+    Encryption and Decryption
+    Data-centers.
+
+Going into these examples in more depth shows why a GPU is so useful. Starting with crypto mining, in which there is something known as the blockchain that is a global ledger formed by linking individual blocks of transaction data. This chain only contains validated transactions, which prevents fraudulent transactions and double-spending of currency.
+This resulting encrypted value is a series of alphanumeric characters, that are of a fixed length. Each block in the blockchain contains, the version number, timestamp, hash used in previous block and hash of the Merkle Root (the hash of all the hashes of all the transactions in the blockchain), the nonce and the target hash.
+
+Cryptomining is focusing on this nonce (number only used once, which is a string of numbers) a nonce is important as it affects the hash of the current block and if the nonce results in a hash whose size is less than the target hash of the network the current block is solved. 
+Miners then try to guess what string to use as a nonce, and the only available method is brute force where the miner will change one value of the string each guess. And this is where GPU's shine. 
+An average GPU can do around 3200 32-bit instructions per clock, compared to an average CPU that can do 4 32-bit instructions per block. This is what makes GPU's perfect for mining since the whole goal of mining is to make money so being as power-efficient as possible is the key to turning a profit since electricity is not free. Finally, GPU's are equipped with a large number of Arithmetic Logic Units resulting in the GPU being able to do more calculations resulting in an improved output in the crypto mining process.
+
+Machine Learning:
+
+https://cdn-media-1.freecodecamp.org/images/1*1mpE6fsq5LNxH31xeTWi5w.jpeg
+
+There are 4 main things to consider when using GPUs for machine learning. Memory, Parallelism, Optimization and Cost Efficiency.
+
+Deep Neural Networks require huge datasets to tune the weights between each node to produce the desired output and these huge datasets require massive amounts of memory to store. 
+So GPU's which are optimised for large computational operations in terms of memory, make the GPU the optimum choice, to give numbers to this advantage in performance the best CPU's have around 50GB/s of memory bandwidth compared to the best GPU's which have around 750GB/s of memory bandwidth
+Since a GPU is parallel while some cores are loading the memory which takes time, others can be processing the dataset so the latency is effectively hidden. Resulting in a processing solution that offers high bandwidth while hiding its latency. 
+However using GPU's for machine learning has some drawbacks, namely optimization and cost-efficiency. Optimization is an issue as a GPU uses an instruction set known as SIMD (Single instruction Multiple Data). SIMD instructions are useful as they execute the same instruction on multiple data points
+which can be great for tuning weights on deep neural networks nodes simultaneously and can iterate over this tuning process quickly and efficiently. But programming the GPU to do this can get very difficult, especially in dense neural networks.
+Which contrasts with using CPU's for Deep Neural Networks, as CPU's can use the MIMD (Multiple Instruction, Multiple Data) technique to achieve parallelism. Because of this, it is much easier to optimise a neural network for a CPU vs a GPU.
+Finally for smaller neural networks where there is no time constraint. A CPU is normally better for neural networks since its cheaper to deploy and use.
 
 How A GPU WORKs:
 The GPU Architecture:
 Looking at the high-level architecture overview of a GPU, it shows that their nature is all about putting every
-available core to work and less focussed on low latency cahce memory access
+available core to work and less focussed on low latency cache memory access
 
 Show Image https://i1.wp.com/nielshagoort.com/wp-content/uploads/2019/03/gpu-architecture.png?resize=768%2C806&ssl=1
 
 Most GPUs consist of multiple Processor CLusters that each contain multiple Streaming Multiprocessors.
-Each Streaming Multiprocesser has an L1 instruction cache layer with its cores. Each SM will have their own L1 cache
-and will share a l2 cache before pulling data from the global GDDR-5 Memory.
-The GDDR-5 Memory is used by a GPU thanks to its incredibly high bandwith interface, however this comes at a cost to memory latency, 
-which is tolerable by a GPU but would not be viable for a CPU to use.
+Each Streaming Multiprocessor has an L1 instruction cache layer with its cores. and each Streaming Multiprocessor will share an L2 cache before pulling data from the global GDDR-5 Memory.
+The GDDR-5 Memory is used by a GPU thanks to its incredibly high bandwidth interface, however, this comes at a cost to memory latency, 
+this is tolerable by a GPU but would not be viable for a CPU to use.
 
-Comparing to a CPU a GPU works with fewer and smaller memory cache layers. Mainly due to a GPU having more transitors dedicated to computation compared to a CPU
+Comparing to a CPU a GPU works with fewer and smaller memory cache layers. Mainly due to a GPU having more transistors dedicated to computation compared to a CPU
 resulting in it caring less about how long it takes to retrieve data from memory as the latency is masked by the GPU doing other things.
+
+Going into this further, a GPU utilises the SIMD paradigm, which was first proposed by Michael J. Flynn in his classification of computer architecture. In his taxonomy, he describes SIMD as computers with multiple processing elements that perform the same operation on multiple data points simultaneously. These machines engineer data-level parallelism but not concurrency: but there are simultaneous computations but only of a single instruction at any given moment. This paradigm is perfect for GPU's thanks to it being perfect for what a GPU needs to do.
+For example, a classic problem that SIMD can do perfectly is where the same value is being added to an array of pixels. Doing this one at a time using a classic computational device like a CPU would be time-consuming, but on a GPU employing SIMD with its thousands of cores can do it instantly making it perfect for computer graphics.
+
+But SIMD does have issues, which results in GPU's having these same issues. Firstly not all algorithms can be easily vectorized. So operations like the parsing of code cannot be done by a GPU. Secondly GPU's require large register files which increase the power consumption and chip area of the device. And SIMD algorithms require manual compilation as most compilers do not support it.
 
 https://i0.wp.com/nielshagoort.com/wp-content/uploads/2019/03/cpu-vs-gpu-cores.png?resize=768%2C479&ssl=1
 
@@ -46,3 +75,6 @@ https://nielshagoort.com/2019/03/12/exploring-the-gpu-archit
 Sources:
 https://blogs.nvidia.com/blog/2009/12/16/whats-the-difference-between-a-cpu-and-a-gpu/
 https://www.extremetech.com/gaming/269335-how-graphics-cards-work
+https://www.investopedia.com/tech/gpu-cryptocurrency-mining/
+https://www.techopedia.com/why-are-gpus-important-for-deep-learning/7/33928
+https://en.wikipedia.org/wiki/SI
