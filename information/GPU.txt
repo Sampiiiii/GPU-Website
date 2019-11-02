@@ -1,10 +1,48 @@
 Explain the purpose of GPU's And what applications are used for.
 
-Gpus and similiar to CPus in the sense that they are both silicon based microprocessors mounted on a pcb with somefrom of cooling attatched
-But their microarcitecture is fundamentally different, A CPU is designed to minimise memory access latency
-which is the dealy from computing a read address and getitng the results back
-wheras a GPU is designed to tolerate latency and maximize the amount of data that can be accessed a sceond.
-Also, CPU's work better on data-dependant operatoions whearas GPUs are designed to work faster
-when mostly the intstructions exectued are independent of the data values.
+A Graphics Processing Unit (GPU) is a computer component that is capable of performing myriads of mathematical calucaltions simulataenously thanks to its parallel
+design. Due to its parrallel structure, a GPU is extremely efficient at manipulating computer garphics and image processing as these tasks require large blocks of data to be processed at once
+which is what a GPU is made for.
 
-The difference in specialisation is clear, for example a CPU can have multiple cores (up to 12 in most use cases) compared to a GPU which has thousands of cores that 
+The Computational Functions of a GPU:
+
+The majority of the computational functions are related to 3D computer graphics. But modern GPUs may also include basic 2d acceleration and framebuffer capabilities. Including, but not limited to, 
+texture mapping, polygon rendering and the rotation and translations of vertices into different coordinate systems.And as all of these functions involve vector and matrix operations, they can be used for other
+non-graphical calucaltions. Such as the so-called "embarassingly parallel problems", these problems all much suited to being computed parallely and so a GPU is perfect for these.
+
+What are GPUs used for?
+
+
+
+
+
+So why are GPUs so good for gaming and other tasks?
+
+There are two major components of a GPU, texture mapping units and render outputs.
+The maximum number of TMU's that a GPU has dictates the maximum texel output
+
+
+How A GPU WORKs:
+The GPU Architecture:
+Looking at the high-level architecture overview of a GPU, it shows that their nature is all about putting every
+available core to work and less focussed on low latency cahce memory access
+
+Show Image https://i1.wp.com/nielshagoort.com/wp-content/uploads/2019/03/gpu-architecture.png?resize=768%2C806&ssl=1
+
+Most GPUs consist of multiple Processor CLusters that each contain multiple Streaming Multiprocessors.
+Each Streaming Multiprocesser has an L1 instruction cache layer with its cores. Each SM will have their own L1 cache
+and will share a l2 cache before pulling data from the global GDDR-5 Memory.
+The GDDR-5 Memory is used by a GPU thanks to its incredibly high bandwith interface, however this comes at a cost to memory latency, 
+which is tolerable by a GPU but would not be viable for a CPU to use.
+
+Comparing to a CPU a GPU works with fewer and smaller memory cache layers. Mainly due to a GPU having more transitors dedicated to computation compared to a CPU
+resulting in it caring less about how long it takes to retrieve data from memory as the latency is masked by the GPU doing other things.
+
+https://i0.wp.com/nielshagoort.com/wp-content/uploads/2019/03/cpu-vs-gpu-cores.png?resize=768%2C479&ssl=1
+
+
+https://nielshagoort.com/2019/03/12/exploring-the-gpu-archit
+
+Sources:
+https://blogs.nvidia.com/blog/2009/12/16/whats-the-difference-between-a-cpu-and-a-gpu/
+https://www.extremetech.com/gaming/269335-how-graphics-cards-work
