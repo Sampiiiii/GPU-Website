@@ -12,7 +12,7 @@
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
     height: 50px;
     border-radius: 100%;
-    background: #016fb9
+    background: turquoise;
 }
 
 .fab-icon-holder:hover {
@@ -32,7 +32,7 @@
 .fab {
     width: 60px;
     height: 60px;
-    background: #d23f31;
+    background: #000000;
 }
 
 .fab-options {
