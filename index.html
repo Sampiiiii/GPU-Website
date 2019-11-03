@@ -25,12 +25,12 @@
     <meta name="author" content="Sam Piper">
     <meta name="keywords" content="ComputerScience, GPU, CPU, Information">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="node_modules\fullpage.js\dist\fullpage.js"></script>
+    <script type="text/javascript" src="node_modules/fullpage.js/dist/fullpage.js"></script>
     <script src="https://kit.fontawesome.com/1ffeb89ed1.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="node_modules\fullpage.js\dist\fullpage.css" />
-    <link rel="stylesheet" type="text/css" href="CSS\fab.css" />
-    <link rel="stylesheet" type="text/css" href="CSS\main.css" />
+    <link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/dist/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/fab.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/main.css" />
 </head>
 
 <body>
@@ -98,7 +98,7 @@
                         these problems are all much suited to being computed with parallel processing and so a GPU is
                         perfect for these.
                     </p>
-                    <img class="center" src="Images\nvidia-geforce-gtx-1080-Front-640px.png">
+                    <img class="center" src="Images/nvidia-geforce-gtx-1080-Front-640px.png">
                 </div>
             </div>
 
@@ -404,7 +404,7 @@
                     have multi-stage instruction pipelines which are a technique to implement instruction-level
                     parallelism within a single processor.
                     <br>
-                    <img src="Images\FiveStagesPipeline.png" height="130.5" width="300"
+                    <img src="Images/FiveStagesPipeline.png" height="130.5" width="300"
                         class="border center imageMargin">
                     Each stage in a multi-stage instruction pipeline corresponds to a different action the processor
                     performs on that instruction in that stage. Because of this processors can issue one instruction per
@@ -500,6 +500,7 @@
         //Tag Manager event trigger for the key script
         dataLayer = window.dataLayer || [];
         dataLayer.push({'event': 'assign_key'});
+
         new fullpage('#fullpage', {
             licenseKey: document.querySelector('#myKey').value,
             anchors: ['firstPage', 'secondPage', 'lastPage'],
