@@ -10,7 +10,8 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
     <script src="https://kit.fontawesome.com/1ffeb89ed1.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css" />
     <link rel="stylesheet" type="text/css" href="CSS/fab.css" />
     <link rel="stylesheet" type="text/css" href="CSS/main.css" />
 </head>
@@ -38,11 +39,19 @@
                     </div>
                 </a>
             </li>
-            <li data-menuanchor="lastPage">
+            <li data-menuanchor="thirdPage">
                 <span class="fab-label">Parallel & Multicore Systems</span>
-                <a href='#lastPage'>
+                <a href='#thirdPage'>
                     <div class="fab-icon-holder">
                         <i class="fas fa-fire fa-lg"></i>
+                    </div>
+                </a>
+            </li>
+            <li data-menuanchor="lastPage">
+                <span class="fab-label">Sources</span>
+                <a href='#lastPage'>
+                    <div class="fab-icon-holder">
+                        <i class="fas fa-search fa-lg"></i>
                     </div>
                 </a>
             </li>
@@ -432,7 +441,7 @@
                 </div>
             </div>
 
-            <div class="slide" id="pageNumero3" data-anchor="slide1">
+            <div class="slide" id="pageNumero3" data-anchor="slide2">
                 <h1 class="shadow">Multicore Systems</h1>
                 <div class="textBox">
                     <p>
@@ -471,13 +480,62 @@
                 <img src="Images/multi-core-processor.jpg" class="center border CPUimg">
             </div>
         </div>
+
+        <div class="section" id="pageNumero4">
+            <h1 class="shadow">Sources</h1>
+            <ul class="sourceList">
+                <li>
+                    GPU's:
+                    <ul class="indentedList">
+                        <li><a class="sourceLink"
+                                href='https://blogs.nvidia.com/blog/2009/12/16/whats-the-difference-between-a-cpu-and-a-gpu/'>The
+                                Difference Between A CPU & GPU</a></li>
+                        <li><a class="sourceLink"
+                                href='https://www.extremetech.com/gaming/269335-how-graphics-cards-work'>How Graphics
+                                Cards Work</a></li>
+                        <li><a class="sourceLink"
+                                href='https://www.investopedia.com/tech/gpu-cryptocurrency-mining/'>How GPU Cryptomining
+                                Works</a></li>
+                        <li><a class="sourceLink"
+                                href='https://www.techopedia.com/why-are-gpus-important-for-deep-learning/7/33928'>Why
+                                GPUS are important for deep learning</a></li>
+                        <li><a class="sourceLink" href='https://en.wikipedia.org/wiki/SIMD'>About the Single Instruction
+                                Multi Data classification</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Parallel Processing:
+                    <ul class="indentedList">
+                        <li><a class="sourceLink" href='https://en.wikipedia.org/wiki/Parallel_computing'>History Behind
+                                Parallel Computing</a></li>
+                        <li><a class="sourceLink" href='https://en.wikipedia.org/wiki/Bit-level_parallelism'>Bit-Level
+                                Parallelism</a></li>
+                        <li><a class="sourceLink"
+                                href='https://en.wikipedia.org/wiki/Instruction-level_parallelism'>Instruction-Level
+                                Parallelism</a></li>
+                        <li><a class="sourceLink" href='https://en.wikipedia.org/wiki/Task_parallelism'>Task
+                                Parallelism</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Parallel Systems:
+                    <ul class="indentedList">
+                        <li><a class="sourceLink"
+                                href='http://ecomputernotes.com/fundamental/disk-operating-system/parallel-processing-systems'>Parallel
+                                Systems</a></li>
+                        <li><a class="sourceLink" href='https://en.wikipedia.org/wiki/Multi-core_processor'>Multiple
+                                Core Processors</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
     <!-- Initializing the Fullpage Module-->
     <script>
         new fullpage('#fullpage', {
             licenseKey: "20AAB3CD-8DB547D7-BD677F05-3012A0AD",
-            anchors: ['firstPage', 'secondPage', 'lastPage'],
-            sectionsColor: ['#EAF4F4', '#CCE3DE', '#A4C3B2'],
+            anchors: ['firstPage', 'secondPage', 'thirdPage', 'lastPage'],
+            sectionsColor: ['F6FFF8', '#EAF4F4', '#CCE3DE', '#A4C3B2'],
             menu: '#myMenu',
             verticalCentered: false
         });
