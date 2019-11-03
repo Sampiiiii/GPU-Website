@@ -2,7 +2,25 @@
 
 <head>
     <meta charset="utf-8">
-    <title>CPU vs GPU</title>
+    <title>GPU Website</title>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WHC2428');
+    </script>
+    <!-- End Google Tag Manager -->
     <meta name="description" content="A website about the differences between CPU's And GPU's">
     <meta name="author" content="Sam Piper">
     <meta name="keywords" content="ComputerScience, GPU, CPU, Information">
@@ -16,30 +34,34 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WHC2428" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- Making the Navigation Button-->
     <div class="fab-container">
         <div class="fab fab-icon-holder">
             <i class="fas fa-bars fa-lg"></i>
         </div>
         <ul id='myMenu' class="fab-options">
-            <li data-menuanchor="secondPage" class="active">
+            <li data-menuanchor="firstPage" class="active">
                 <span class="fab-label">GPU's & How GPU's Work</span>
-                <a href='#secondPage'>
+                <a href='#firstPage'>
                     <div class="fab-icon-holder">
                         <i class="fas fa-microchip fa-lg"></i>
                     </div>
                 </a>
             </li>
-            <li data-menuanchor="thirdPage">
-                <span class="fab-label">Parallel Systems & Parallel Processing</span>
-                <a href='#thirdPage'>
+            <li data-menuanchor="secondPage">
+                <span class="fab-label">History Of Parallel Computing & Parallel Processing</span>
+                <a href='#secondPage'>
                     <div class="fab-icon-holder">
                         <i class="fas fa-memory fa-lg"></i>
                     </div>
                 </a>
             </li>
             <li data-menuanchor="lastPage">
-                <span class="fab-label">Multicore Systems</span>
+                <span class="fab-label">Parallel & Multicore Systems</span>
                 <a href='#lastPage'>
                     <div class="fab-icon-holder">
                         <i class="fas fa-fire fa-lg"></i>
@@ -54,96 +76,439 @@
             <div class="slide" id="pageNumero1" data-anchor="slide1">
                 <h1 class="shadow">GPU's</h1>
                 <div class="textBox">
-                    Ipsum reprehenderit minim reprehenderit ex ea labore aute. Irure minim elit ipsum non fugiat laboris
-                    aliqua occaecat. Laborum ad tempor qui est laboris. Enim proident ex voluptate ullamco duis sint
-                    proident eiusmod veniam aliqua reprehenderit proident fugiat ullamco.
-
-                    Nulla amet consectetur velit laborum cupidatat cupidatat et laboris aliqua duis velit officia
-                    reprehenderit cupidatat. Minim anim nulla cupidatat pariatur velit cillum incididunt velit aliqua.
-                    Commodo mollit nostrud fugiat elit fugiat fugiat.
-
-                    Culpa dolore magna voluptate dolor non exercitation in proident consectetur aliqua laboris ut. Id
-                    aliquip in aliquip ipsum velit id id amet in non ullamco quis aliquip deserunt. Exercitation esse
-                    magna
-                    proident commodo pariatur consequat incididunt laboris dolor.
-
+                    <p>
+                        A Graphics Processing Unit (GPU) is a computer component that is capable of performing myriads
+                        of
+                        mathematical calculations simultaneously thanks to its parallel
+                        design. Due to its parallel structure, a GPU is extremely efficient at manipulating computer
+                        graphics and image processing as these tasks require large blocks of data to be processed at
+                        once
+                        which is what a GPU is made for.
+                    </p>
+                    <h3>The Computational Functions of a GPU:</h3>
+                    <p>
+                        The majority of the computational functions are related to 3D computer graphics. But modern GPUs
+                        may
+                        also include basic 2D acceleration and framebuffer capabilities. Including, but not limited to,
+                        texture mapping, polygon rendering and the rotation and translations of vertices into different
+                        coordinate systems. And as all of these functions involve vector and matrix operations, they can
+                        be
+                        used for other non-graphical calculations. Such as the so-called "embarrassingly parallel
+                        problems",
+                        these problems are all much suited to being computed with parallel processing and so a GPU is
+                        perfect for these.
+                    </p>
+                    <img class="center" src="\Images\nvidia-geforce-gtx-1080-Front-640px.png">
                 </div>
-
-
-
             </div>
 
             <div class="slide" id="pageNumero1" data-anchor="slide2">
-                <h1 class="shadow">How They Work</h1>
+                <h1 class="shadow">What are GPU's suited for?</h1>
                 <div class="textBox">
-                    Ipsum reprehenderit minim reprehenderit ex ea labore aute. Irure minim elit ipsum non fugiat laboris
-                    aliqua occaecat. Laborum ad tempor qui est laboris. Enim proident ex voluptate ullamco duis sint
-                    proident eiusmod veniam aliqua reprehenderit proident fugiat ullamco.
-
-                    Nulla amet consectetur velit laborum cupidatat cupidatat et laboris aliqua duis velit officia
-                    reprehenderit cupidatat. Minim anim nulla cupidatat pariatur velit cillum incididunt velit aliqua.
-                    Commodo mollit nostrud fugiat elit fugiat fugiat.
-
-                    Culpa dolore magna voluptate dolor non exercitation in proident consectetur aliqua laboris ut. Id
-                    aliquip in aliquip ipsum velit id id amet in non ullamco quis aliquip deserunt. Exercitation esse
-                    magna
-                    proident commodo pariatur consequat incididunt laboris dolor.
-
+                    <p>
+                        There are two major components of a GPU, texture mapping units and render outputs.
+                        The maximum number of TMU's that a GPU has dictates the maximum texel output, where a texel is
+                        the
+                        fundamental unit of a texture map, and how quickly a GPU can address and map textures onto
+                        objects.
+                        Render outputs (a.k.a raster operations pipelines) are where the output of a GPU is compiled
+                        into an
+                        image for display onto a monitor.
+                        The number of render outputs multiplied by the clock speed of a GPU gives you the pixel fill
+                        rate.
+                        So having a high number of render outputs results in more pixels being outputted simultaneously.
+                        High numbers of render outputs can handle higher levels of antialiasing, which is a technique
+                        for
+                        smoothing the jagged edges of where one 3D objects ends and another begins.
+                    </p>
+                    <p>
+                        All of these features make a GPU perfect for gaming, as every 3D game utilises textures heavily,
+                        so
+                        having a device that can process massive amounts of textures simultaneously will result in a
+                        fast
+                        gaming experience. Which a modern CPU just cannot provide thanks to its serial nature.
+                    </p>
+                    <p>
+                        Since GPUs are great at bulk processing of matrix and vector calculations, so
+                        any sort of use-case that relies on massive amounts of calculations to be done are perfect for
+                        GPU's.
+                    </p>
+                    <p>
+                        Uses of GPU's outside of gaming include:
+                        <ul class=list>
+                            <li>Video Decoding</li>
+                            <li>Cryptomining</li>
+                            <li>Machine Learning</li>
+                            <li>Computer-Aided Design & Rendering</li>
+                            <li>Encryption & Decryption</li>
+                            <li>Data Centers</li>
+                        </ul>
+                    </p>
                 </div>
+            </div>
 
+            <div class="slide" id="pageNumero1" data-anchor="slide3">
+                <h1 class="shadow">Cryptomining In Depth</h1>
+                <div class="textBox">
+                    <p>
+                        Going into these examples in more depth shows why a GPU is so useful. Starting with crypto
+                        mining,
+                        in which there is something known as the blockchain that is a global ledger formed by linking
+                        individual blocks of transaction data. This chain only contains validated transactions, which
+                        prevents fraudulent transactions and double-spending of currency.
+                        This resulting encrypted value is a series of alphanumeric characters, that are of a fixed
+                        length.
+                        Each block in the blockchain contains, the version number, timestamp, hash used in previous
+                        block
+                        and hash of the Merkle Root (the hash of all the hashes of all the transactions in the
+                        blockchain),
+                        the nonce and the target hash.
+                    </p>
+                    <p>
+                        Cryptomining is focusing on this nonce (number only used once, which is a string of numbers) a
+                        nonce
+                        is important as it affects the hash of the current block and if the nonce results in a hash
+                        whose
+                        size is less than the target hash of the network the current block is solved.
+                        Miners then try to guess what string to use as a nonce, and the only available method is brute
+                        force
+                        where the miner will change one value of the string each guess. And this is where GPU's shine.
+                        An average GPU can do around 3200 32-bit instructions per clock, compared to an average CPU that
+                        can
+                        do 4 32-bit instructions per block. This is what makes GPU's perfect for mining since the whole
+                        goal
+                        of mining is to make money so being as power-efficient as possible is the key to turning a
+                        profit
+                        since electricity is not free. Finally, GPU's are equipped with a large number of Arithmetic
+                        Logic
+                        Units resulting in the GPU being able to do more calculations resulting in an improved output in
+                        the
+                        crypto mining process.
+                    </p>
+                    <img src="/Images/gpuMiningRig.webp" class="center border">
+                </div>
+            </div>
 
+            <div class="slide anchor" id="pageNumero1" data-anchor="slide4">
+                <h1 class="shadow">Machine Learning In Depth</h1>
+                <div class="textBox alignLeft">
+                    <p>
+                        There are 4 main things to consider when using GPUs for machine learning; <strong>Memory,
+                            Parallelism,
+                            Optimization and Cost Efficiency.</strong>
+                    </p>
+                    <p>
+                        Deep Neural Networks require huge datasets to tune the weights between each node to produce the
+                        desired output and these huge datasets require massive amounts of memory to store.
+                        So GPU's which are optimised for large computational operations in terms of memory, make the GPU
+                        the
+                        optimum choice, to give numbers to this advantage in performance the best CPU's have around
+                        50GB/s
+                        of memory bandwidth compared to the best GPU's which have around 750GB/s of memory bandwidth.
+                        Since a GPU utilises parallel processing, while some cores are loading the memory which takes
+                        time, others can be
+                        processing the dataset so the latency is effectively hidden. Resulting in a processing solution
+                        that
+                        offers high bandwidth while hiding its latency.
+                    </p>
+                    <p>
+                        However using GPU's for machine learning has some drawbacks, namely optimization and
+                        cost-efficiency. Optimization is an issue as a GPU uses an instruction set paradigm known as
+                        SIMD (Single
+                        instruction Multiple Data). SIMD instructions are useful as they execute the same instruction on
+                        multiple data points
+                        which can be great for tuning weights on deep neural networks nodes simultaneously and can
+                        iterate
+                        over this tuning process quickly and efficiently. But programming the GPU to do this can get
+                        very
+                        difficult, especially in dense neural networks.
+                        Which contrasts with using CPU's for Deep Neural Networks, as CPU's can use the MIMD (Multiple
+                        Instruction, Multiple Data) paradigm to achieve parallelism. (However CPU's can use the SIMD
+                        paradigm as well). Because of this, it is much easier to
+                        optimise a neural network for a CPU vs a GPU.
+                        Finally for smaller neural networks where there is no time constraint. A CPU is normally better
+                        for
+                        neural networks since its cheaper to deploy and use.
+                    </p>
+                    <img src="/Images/gpuMachineLearningRig.jpg" width="800" height="600" class="alignRight2 border">
+                </div>
+            </div>
 
+            <div class="slide anchor" id="pageNumero1" data-anchor="slide5">
+                <h1 class="shadow">How A GPU Works</h1>
+                <div class="textBox alignLeft">
+                    <h3>The GPU Architecture:</h3>
+                    <p>
+                        Looking at the high-level architecture overview of a GPU, it shows that their nature is all
+                        about
+                        putting every available core to work and less focussed on low latency cache memory access
+                    </p>
+                    <p>
+                        Most GPUs consist of multiple Processor Clusters that each contain multiple Streaming
+                        Multiprocessors.
+                        Each Streaming Multiprocessor has an L1 instruction cache layer with its cores. and each
+                        Streaming
+                        Multiprocessor will share an L2 cache before pulling data from the global GDDR-5 Memory.
+                        The GDDR-5 Memory is used by a GPU thanks to its incredibly high bandwidth interface, however,
+                        this
+                        comes at a cost to memory latency,
+                        this is tolerable by a GPU but would not be viable for a CPU to use.
+                    </p>
+                    <img src="/Images/gpu-architecture.png" class="border alignRight">
+                    <p>
+                        Comparing to a CPU a GPU works with fewer and smaller memory cache layers. Mainly due to a GPU
+                        having more transistors dedicated to computation compared to a CPU
+                        resulting in it caring less about how long it takes to retrieve data from memory as the latency
+                        is
+                        masked by the GPU doing other things.
+                    </p>
+                </div>
+            </div>
+
+            <div class="slide anchor" id="pageNumero1" data-anchor="slide6">
+                <h1 class="shadow">How a GPU Works Cont.</h1>
+                <div class="textBox alignLeft">
+                    <p>
+                        Going into this further, a GPU utilises the SIMD paradigm, which was first proposed by
+                        <cite>Michael J.Flynn</cite> in his classification of computer architecture. In his taxonomy, he
+                        describes SIMD as
+                        computers with multiple processing elements that perform the same operation on multiple data
+                        points
+                        simultaneously. These machines engineer data-level parallelism but not concurrency: but there
+                        are
+                        simultaneous computations but only of a single instruction at any given moment. This paradigm is
+                        perfect for GPU's thanks to it being perfect for what a GPU needs to do.
+                        For example, a classic problem that SIMD can do perfectly is where the same value is being added
+                        to
+                        an array of pixels. Doing this one at a time using a classic computational device like a CPU
+                        would
+                        be time-consuming, but on a GPU employing SIMD with its thousands of cores can do it instantly
+                        making it perfect for computer graphics.
+                    </p>
+                    <p>
+                        But the SIMD idea does have issues, which results in GPU's having these same issues. Firstly not
+                        all
+                        algorithms can be easily vectorized. So operations like the parsing of code cannot be done by a
+                        GPU.
+                        Secondly GPU's require large register files which increase the power consumption and chip area
+                        of
+                        the device. And SIMD algorithms require manual compilation as most compilers do not support it.
+                    </p>
+                    <img src="Images/simd.jpeg" height="360" width="800" class="alignRight3 border">
+                </div>
             </div>
         </div>
 
         <div class="section" id="pageNumero2">
-            <h1 class="shadow">Parallel Systems</h1>
-            <div class="textBox">
-                Ipsum reprehenderit minim reprehenderit ex ea labore aute. Irure minim elit ipsum non fugiat laboris
-                aliqua occaecat. Laborum ad tempor qui est laboris. Enim proident ex voluptate ullamco duis sint
-                proident eiusmod veniam aliqua reprehenderit proident fugiat ullamco.
+            <div class="slide" id="pageNumero2" data-anchor="slide1">
+                <h1 class="shadow">History Of Parallel Computing</h1>
+                <div class="textBox">
+                    <p>
+                        Traditionally, computer software has been written to be computed serially normally described by
+                        the
+                        bit-serial architecture where the processor operators on one bit or digit for each clock cycle.
+                        To
+                        solve a given problem, an algorithm would be constructed and implemented as a serial stream of
+                        instructions. These instructions are executed by a CPU via the fetch-decode-execute cycle.
+                    </p>
+                    <p>
+                        Parallel computing, uses multiple processing elements simultaneously to solve a given problem.
+                        This
+                        is accomplished by deconstructing the problem into independent parts that each processing
+                        element
+                        can execute simultaneously with others. These processing elements can be anything such as a
+                        single
+                        computer with multiple processors, networked computers or specialized hardware. Historically
+                        this
+                        was used for scientific computing and simulation of scientific problems such as weather systems
+                        etc.
+                        This then led to parallel hardware, software and high-performance computing.
+                    </p>
+                    <p>
+                        Before the implementation of parallel computing. Computer performance improved via frequency
+                        scaling
+                        where newer processors would just have higher clock speeds, this increased computer performance
+                        as
+                        the average runtime of a program is the number of instructions multiplied by the average runtime
+                        of
+                        the instruction. So by doing more instructions a second, the average runtime of a program would
+                        decrease. But the issue of power consumption started to rise, as the power consumption of a
+                        given
+                        processor is given by the product of the capacitance switched by each clock cycle, the frequency
+                        and
+                        the square of the voltage, increasing the frequency increased the power consumption.
+                    </p>
+                    <p>
+                        The reason why power consumption was such an issue is because of the technology of the time, the
+                        heat transfer from the CPU to the surrounding atmosphere was not as advanced as it is today and
+                        resulting in the CPU overheating and either breaking or thermal throttling, where the CPU would
+                        slow
+                        down its clock speed to reduce the amount of power consumed defeating the purpose of operating
+                        at a
+                        higher frequency in the first place.
+                    </p>
+                    <p>
+                        To solve this problem processor manufacturers changed their focus from clock speed to having
+                        multiple cores that can act independently of each other and access the system's memory
+                        concurrently,
+                        bringing parallel computing to desktop computers. With the hardware sorted out, the software of
+                        a
+                        computer had to change as well to be able to support this. And so operating systems were built
+                        to
+                        ensure that different tasks and user programs are run in parallel on the available cores. But
+                        previous computer software which had been written for serial processors are not optimised to run
+                        on
+                        multi-core architectures and so the developers have to parallelise their software code to take
+                        advantage of the increasing computing power of multicore architectures.
+                    </p>
+                </div>
+            </div>
 
-                Nulla amet consectetur velit laborum cupidatat cupidatat et laboris aliqua duis velit officia
-                reprehenderit cupidatat. Minim anim nulla cupidatat pariatur velit cillum incididunt velit aliqua.
-                Commodo mollit nostrud fugiat elit fugiat fugiat.
+            <div class="slide" id="pageNumero2" data-anchor="slide2">
+                <h1 class="shadow">Parallel Processing</h1>
+                <div class="textBox">
+                    <p>
+                        When it comes to parallel computing there are three types of parallelism; <strong>Bit-level
+                            parallelism,
+                            Instruction-level parallelism and Task parallelism.</strong>
+                    </p>
+                    <h3>Bit-level Parallelism:</h3>
+                    <p>
+                        This is a form of parallel computing based on increasing the processor word size, a word is the
+                        natural unit of data used by a particular processor design which is a fixed-size piece of data
+                        handled as a single unit by the instruction set of the processor. Increasing the word size
+                        reduces
+                        the number of instructions that the processor must execute to perform a given operation on
+                        variables
+                        that are larger than the length of the word.
+                        For Example, let's say you have an 8-bit processor that needs to add 16-bit integers. It would
+                        have
+                        to add the 8 lower-order bits from each integer, then add the 8 higher-order bits. But a 16-bit
+                        processor can do it in one operation. So by increasing the word size of a processor, you can
+                        reduce
+                        the instructions required to carry out operations.
+                    </p>
+                </div>
+                <img src="/Images/bitLevelPallelism.jpeg" height="400" width="500" class="center border">
+            </div>
 
-                Culpa dolore magna voluptate dolor non exercitation in proident consectetur aliqua laboris ut. Id
-                aliquip in aliquip ipsum velit id id amet in non ullamco quis aliquip deserunt. Exercitation esse magna
-                proident commodo pariatur consequat incididunt laboris dolor.
-
+            <div class="slide" id="pageNumero2" data-anchor="slide3">
+                <h1 class="shadow">Types Of Parallelism Continued.</h1>
+                <div class="textBox">
+                    <h3>Instruction-level parallelism:</h3>
+                    As a computer program is essentially a stream of instructions that a processor carries out,
+                    processors that don't utilise the instruction-level parallelism can only issue less that one
+                    instruction per clock cycle (these processors are known as sub-scalar processors). But with
+                    instruction-level parallelism, these instructions can be re-ordered and combined into groups with
+                    each group executed in parallel, without changing the result of the program. All modern processors
+                    have multi-stage instruction pipelines which are a technique to implement instruction-level
+                    parallelism within a single processor.
+                    <br>
+                    <img src="\Images\FiveStagesPipeline.png" height="130.5" width="300"
+                        class="border center imageMargin">
+                    Each stage in a multi-stage instruction pipeline corresponds to a different action the processor
+                    performs on that instruction in that stage. Because of this processors can issue one instruction per
+                    clock cycle and are known as scalar processors. And as most modern processors have multiple cores
+                    (execution units) they can combine these cores with pipelining and can issue more than one
+                    instruction per clock cycle. These processors are known as superscalar processors.
+                    <br>
+                    With instruction-level parallelism, instructions can only be grouped if they have no data dependency
+                    between them. So algorithms such as the Tomasulo and Scoreboarding algorithm are utilised to
+                    implement out-of-order execution and instruction-level parallelism.
+                    <br>
+                    <h3>Task Parallelism:</h3>
+                    Task parallelism is a characteristic of a parallel program that can perform entirely different
+                    calculations on either the same or different sets of data. Which contrasts with data parallelism, in
+                    which the same calculation is performed on the same or different sets of data. Task parallelism
+                    involves the decomposition of a task into sub-tasks and then allocating each sub-task to a processor
+                    for execution. These sub-tasks are then executed concurrently and cooperatively. But task
+                    parallelism does not usually scale with the size of a problem.
+                </div>
             </div>
         </div>
 
-        <div class="section" id="pageNumero5">
-            <h1 class="shadow">Multi-core Systems</h1>
-            <div class="textBox">
-                Ipsum reprehenderit minim reprehenderit ex ea labore aute. Irure minim elit ipsum non fugiat laboris
-                aliqua occaecat. Laborum ad tempor qui est laboris. Enim proident ex voluptate ullamco duis sint
-                proident eiusmod veniam aliqua reprehenderit proident fugiat ullamco.
-
-                Nulla amet consectetur velit laborum cupidatat cupidatat et laboris aliqua duis velit officia
-                reprehenderit cupidatat. Minim anim nulla cupidatat pariatur velit cillum incididunt velit aliqua.
-                Commodo mollit nostrud fugiat elit fugiat fugiat.
-
-                Culpa dolore magna voluptate dolor non exercitation in proident consectetur aliqua laboris ut. Id
-                aliquip in aliquip ipsum velit id id amet in non ullamco quis aliquip deserunt. Exercitation esse magna
-                proident commodo pariatur consequat incididunt laboris dolor.
+        <div class="section" id="pageNumero3">
+            <div class="slide" id="pageNumero3" data-anchor="slide1">
+                <h1 class="shadow">Parallel Systems</h1>
+                <div class="textBox">
+                    <p>
+                        Parallel processing systems are systems designed to speed up program execution via the above
+                        parallelism methods, mainly instruction-level parallelism.
+                        These systems deal with the simultaneous use of multiple computer resources such as single
+                        computers
+                        with multiple processors or networked computers, however, the later is normally only seen at an
+                        enterprise level due to cost and complexity. Whereas the former is usually seen at a consumer
+                        level
+                        in desktop computers and mobile devices like smartphones and tablets.
+                    </p>
+                    <p>
+                        Parallel Systems have the benefit of being faster than serial systems since multiple processors
+                        are
+                        working on a task at once, ease of scalability, a higher throughput of data and increased
+                        reliability as if a processor is lost the system can continue albeit at a slower speed. However,
+                        the
+                        implementation of a parallel system is difficult due to the extraction of the parallelism in a
+                        problem (Ahhmdals Law) and writing a program to be executed parallelly is difficult.
+                    </p>
+                    <img src="/Images/supercomputer.jpg" class="border center">
+                </div>
             </div>
 
-
-
+            <div class="slide" id="pageNumero3" data-anchor="slide1">
+                <h1 class="shadow">Multicore Systems</h1>
+                <div class="textBox">
+                    <p>
+                        Multicore Systems are now everywhere and pretty much every computational device has more than
+                        one
+                        core (except in special cases such as embedded systems etc.), they are advantageous in parallel
+                        processing thanks to the CPU having multiple cores that can process tasks individually achieving
+                        superscalar performance. Multicore systems also give an increased performance as the operating
+                        system can allocate tasks to the CPU to always keep it busy making the system feel more
+                        responsive
+                        and snappy.
+                    </p>
+                    <p>
+                        Multicore systems can also truly execute multiple tasks concurrently unlike single-core systems
+                        which can schedule tasks to give the perception that the system is multitasking when in reality
+                        it's
+                        just executing tasks serially. Multicore systems achieve this by having the operating system
+                        split
+                        the different applications/processes between the separate CPU cores with each core either
+                        executing
+                        the program serially or justing instruction-level parallelism.
+                    </p>
+                    <p>
+                        Some applications are resource-intensive so by having a multi-core system the application can
+                        run
+                        separate sub-processes on different cores to speed up its runtime, this is particularly
+                        advantageous
+                        in rendering applications where a GPU cannot be used. Such as batch-rendering in programs such
+                        as
+                        Lightroom. And web-browsers such as google chrome which will spawn new threads for every tab
+                        opened,
+                        so having more threads available (multicore systems) results in the application acting more
+                        responsive when switching between tabs.
+                    </p>
+                </div>
+                <img src="/Images/multi-core-processor.jpg" class="center border CPUimg">
+            </div>
         </div>
     </div>
-
+    <input id="myKey" type="hidden" value="null" />
     <!-- Initializing the Fullpage Module-->
     <script>
+        //Tag Manager event trigger for the key script
+        dataLayer = window.dataLayer || [];
+        dataLayer.push({'event': 'assign_key'});
         new fullpage('#fullpage', {
-            licenseKey: '20AAB3CD-8DB547D7-BD677F05-3012A0AD',
-            anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'lastPage'],
-            sectionsColor: ['#F6FFF8', '#EAF4F4', '#CCE3DE', '#A4C3B2', '#GB9080', '#E2BEF1'],
+            licenseKey: document.querySelector('#myKey').value,
+            anchors: ['firstPage', 'secondPage', 'lastPage'],
+            sectionsColor: ['#EAF4F4', '#CCE3DE', '#A4C3B2'],
             menu: '#myMenu',
             verticalCentered: false
         });
+        var item = document.querySelector('#myKey');
+        item.parentNode.removeChild(item);
     </script>
 
 </body>

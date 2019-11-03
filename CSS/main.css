@@ -13,6 +13,10 @@ body {
     background: #f4f4f3;
 }
 
+p {
+    margin: 0.5em;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -31,6 +35,9 @@ h1 {
     align-items: center;
     justify-content: center;
 }
+.anchor {
+    position: relative;
+}
 
 .textBox {
     align-items: center;
@@ -39,11 +46,14 @@ h1 {
     margin-left: 15vw;
     margin-right: 15vw;
     font-size: 1.2vw;
-
+    float: left;
 }
 
 h3 {
-    font-size: 2.4em;
+    font-size: 1.6em;
+    text-decoration: underline;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 .shadow {
@@ -54,52 +64,58 @@ h3 {
         7px 7px 0px rgba(0, 0, 0, 0.2);
 }
 
-/* Adding Pullup  from bottom, animated when hovered over to display sources cause im a fancy bastard*/
-.Sources {
-    margin-left: 0vw;
-    background-color: white;
-    position:absolute;
-    bottom:0;
-    width:100%;
-    height:vh;
-    text-align: center;
-    justify-content: center;
-    overflow: hidden;
-    margin: 0 auto;
+.fp-controlArrow.fp-prev {
+    border-color: transparent #000000 transparent transparent
 }
 
+.fp-controlArrow.fp-next {
+    border-color: transparent transparent transparent #000000
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
-.pullUp {
-    margin: 0 auto;
-    padding: 2em;
-    background-color: #f7f7eb;
-    position: relative;
-    -webkit-border-top-left-radius: 20px;
-    -webkit-border-top-right-radius: 20px;
-    -moz-border-radius-topleft: 20px;
-    -moz-border-radius-topright: 20px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    transform: translateY(140px);
-    transition: all 0.5s ease-in-out;
+.border {
+    border-style: solid;
+    border-width: 0.17em;
+}
+
+.list {
+    margin-left: 5vw;
+}
+
+.alignLeft {
+    margin-left: 3vw;
+    margin-right: 45vw;
+}
+
+.alignRight {
+    position: absolute;
+    right: 3vw;
+    bottom: 3%;
+}
+
+.alignRight2 {
+    position: absolute;
+    right: 3vw;
+    bottom: 15%;
+}
+
+.alignRight3 {
+    position: absolute;
+    right: 3vw;
+    bottom: 30%;
+}
+
+.imageMargin {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+.CPUimg {
+    max-height: 40%;
+    width: auto;
   }
-  
-.pullUp:hover {
-    transform: translateY(0px);
-    }
-
-#pageNumero1 {
-    background: url() no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#pageNumero2 {
-    background: url() no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
