@@ -530,15 +530,18 @@
             </ul>
         </div>
     </div>
+    <input id="myKey" type="hidden" value="20AAB3CD-8DB547D7-BD677F05-3012A0AD" />
     <!-- Initializing the Fullpage Module-->
     <script>
         new fullpage('#fullpage', {
-            licenseKey: "20AAB3CD-8DB547D7-BD677F05-3012A0AD",
+            licenseKey: document.querySelector('#myKey').value,
             anchors: ['firstPage', 'secondPage', 'thirdPage', 'lastPage'],
             sectionsColor: ['F6FFF8', '#EAF4F4', '#CCE3DE', '#A4C3B2'],
             menu: '#myMenu',
             verticalCentered: false
         });
+        var item = document.querySelector('#myKey');
+        item.parentNode.removeChild(item);
     </script>
 
 </body>
