@@ -91,7 +91,7 @@ h3 {
 
 .alignLeft {
     margin-left: 3vw;
-    margin-right: 45vw;
+    margin-right: 50vw;
 }
 
 .alignRight {
@@ -103,7 +103,7 @@ h3 {
 .alignRight2 {
     position: absolute;
     right: 3vw;
-    bottom: 15%;
+    bottom: 2%;
 }
 
 .alignRight3 {
@@ -119,6 +119,16 @@ h3 {
 
 .CPUimg {
     max-height: 40%;
+    width: auto;
+}
+
+.GPUimg {
+    max-width: 50%;
+    width: auto;
+}
+
+.GPUimg2 {
+    max-width: 45%;
     width: auto;
 }
 
